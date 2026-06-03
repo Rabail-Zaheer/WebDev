@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding-top: 50px;
+}
+
+#dice {
+    font-size: 320px;
+    display: inline-block;
+    user-select: none;
+    /* Prevents text highlighting while clicking rapidly */
+    transition: transform 0.1s ease;
+}
+
+#dice:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    /* Slight pop effect on hover */
+}
+
+.instruction {
+    font-size: 18px;
+    color: #555;
+    margin-top: -20px;
+}

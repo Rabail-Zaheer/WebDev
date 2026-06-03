@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+            /* Gives a retro digital vibe */
+        }
+
+        .clock-container {
+            background-color: #2b2b2b;
+            padding: 30px 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            border: 2px solid #333;
+            text-align: center;
+        }
+
+        /* Target ID for your JavaScript code */
+        #MyClockDisplay {
+            color: #00ffcc;
+            /* Glowing neon teal */
+            font-size: 60px;
+            letter-spacing: 5px;
+            text-shadow: 0 0 15px rgba(0, 255, 204, 0.6);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="clock-container">
+        <div id="MyClockDisplay" class="clock">00:00:00 AM</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

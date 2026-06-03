@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f7f9fc;
+        }
+
+        .todo-container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+            text-align: center;
+        }
+
+        #myForm {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        #myInput {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        #myInput:focus {
+            border-color: #007bff;
+        }
+
+        form button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        #myItem {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #myItem li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f8f9fa;
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+            word-break: break-all;
+        }
+
+        #myItem li button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        #myItem li button:hover {
+            background-color: #bd2130;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="todo-container">
+        <h2>My To-Do List</h2>
+
+        <form id="myForm">
+            <input type="text" id="myInput" placeholder="Add a new task..." required autocomplete="off">
+            <button type="submit">Add</button>
+        </form>
+
+        <ul id="myItem"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
